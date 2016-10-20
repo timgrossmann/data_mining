@@ -1,7 +1,6 @@
 from os import listdir
 import pandas as pd
 
-from sqlalchemy import create_engine
 disk_engine = create_engine('sqlite:///age_gender_data.db')
 
 def create_table (file):
