@@ -1,3 +1,6 @@
+#database
+*.db
+
 #csv data
 *.csv
 
