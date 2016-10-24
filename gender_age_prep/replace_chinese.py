@@ -19,5 +19,7 @@ with open('./data/' + sys.argv[1], 'r') as file:
     lines.append(line)
 
 with open('./data/' + sys.argv[1], 'w') as new_file:
-  for line in lines:
+  print len(lines)
+  for i, line in enumerate(lines):
+    print str(i) +  '/' + str(len(lines))
     new_file.write(replace_pinyin(line.decode('utf-8')))
